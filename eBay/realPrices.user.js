@@ -3,7 +3,7 @@
 // @version      0.1
 // @description  Replace prices on eBay with price + shipping
 // @author       https://github.com/hurtstotouchfire
-// @match        https://www.ebay.com/
+// @match        https://www.ebay.com/sch*
 // ==/UserScript==
 
 (function() {
