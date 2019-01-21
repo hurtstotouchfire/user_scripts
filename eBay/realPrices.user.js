@@ -9,6 +9,13 @@
 (function() {
     'use strict';
 
+    // TODO: Using this script as a template for a shoptagr script, I'm getting errors like containers.toArray is not a function.
+    //       Honesly, I can't really imagine why I am going through this weird looping thing anyway. You'd think I could get jQuery
+    //       objects some more clever way, or loop through whatever is coming back natively. Anyway, just debugging, I tried to
+    //       naively jqueryify the whole container set (`$(containers)`) and the error is really weird:
+    //       `SyntaxError: '[object HTMLDivElement]' is not a valid selector`
+    //       Maybe it's late at night and I've forgotten javascript but I really should have put some damn jsdoc comments on this
+    //       garbage. Then at least I'd know what object types I expected as inputs and outputs and whatnot.
     // Make an array of objects with the parent containers as jQuery objects
     var containers = $('.lvprices');
     var items = containers.toArray().map(function(i){
