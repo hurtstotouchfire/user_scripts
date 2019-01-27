@@ -1,16 +1,19 @@
 // ==UserScript==
-// @name         Add Style
-// @namespace    Shoptagr
-// @version      0.1
-// @description  Shoptagr CSS over-rides
-// @author       https://github.com/hurtstotouchfire
+// @name         Shoptagr style over-rides
+// @namespace    http://tampermonkey.net/
+// @version      0.1.1
+// @description  CSS
+// @author       hurtstotouchfire
 // @match        https://beta.shoptagr.com/dashboard
-// @grant        GM_addstyle
+// @grant        GM_addStyle
 // ==/UserScript==
 
 (function() {
     'use strict';
 
     // Show all of My Lists
-    GM_addstyle(".sidebar__filter.--lists { height: auto; }");
+    GM_addStyle(".sidebar__filter.--lists { height: auto; }");
+
+    // Hide aborted pinterest button
+    GM_addStyle("[title~=Privacy] { height: 0; }");
 })();
