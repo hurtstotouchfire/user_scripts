@@ -6,6 +6,7 @@
 // @author       hurtstotouchfire
 // @match        https://beta.shoptagr.com/dashboard
 // @grant        GM_addStyle
+// @noframes
 // ==/UserScript==
 
 (function() {
