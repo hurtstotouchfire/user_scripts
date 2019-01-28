@@ -15,5 +15,5 @@
     GM_addStyle(".sidebar__filter.--lists { height: auto; }");
 
     // Hide aborted pinterest button
-    GM_addStyle("[title~=Privacy] { height: 0; }");
+    GM_addStyle("[title~=Privacy] { display: none; }");
 })();
